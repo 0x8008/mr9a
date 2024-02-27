@@ -30,7 +30,11 @@ The board is sold under the model name X99-MR9A, as well as E5-MR9A. Having one 
 
 **All the BIOS files supplied in this repo are only known to work with my motherboard. They might (and most likely will) work on your board, albeit proceed with caution. Anything you do is out of your own free will and was your decision - do not come to me crying if you fuck something up. I will not take any responsibility for your wrongdoing.**
 
-The default BIOS is janky, to say the least - it does not provide support for some things that the motherboard handles on non-stock BIOS, such as sleep states or memory timings. It is hence recommended to flash a BIOS from a similar motherboard, in this case the Huananzhi X99-8M-F, as it works flawlessly on the MR9A. Attached to this repo are four BIOSes - a stock dump from the board, a Turbo Boost Unlocked + undervolted (-50mV) version sourced from Miyconst's [Mi899](https://github.com/miyconst/Mi899), a modified version with Resizable BAR capability added using Curi0's [ReBarUEFI](https://github.com/xCuri0/ReBarUEFI) (on top of TBU and undervolting), and, for shits and giggles, a version containing all the above alongside a modified boot splash logo (as I could not stand the "Huananzhi" logo, OCD moment). The BIOSes are labeled with a prefix. I recommend using FPT from inside Mi899 to flash the files. 
+The default BIOS is janky, to say the least - it does not provide support for some things that the motherboard handles on non-stock BIOS, such as sleep states or memory timings. It is hence recommended to flash a BIOS from a similar motherboard, in this case the Huananzhi X99-8M-F, as it works flawlessly on the MR9A. Attached to this repo are four BIOSes:
+- a stock dump from the board,
+- a Turbo Boost Unlocked + undervolted (-50mV) version sourced from Miyconst's [Mi899](https://github.com/miyconst/Mi899),
+- a modified version with Resizable BAR capability added using Curi0's [ReBarUEFI](https://github.com/xCuri0/ReBarUEFI) (on top of TBU and undervolting),
+- and, for shits and giggles, a version containing all the above alongside a modified boot splash logo (as I could not stand the "Huananzhi" logo, OCD moment). The BIOSes are labeled with a prefix. I recommend using FPT from inside Mi899 to flash the files. 
 
 Remember to:
 - restore default settings after flashing ANY of these BIOSes! Ignoring this step may result in issues.
@@ -43,7 +47,7 @@ Windows 10 installs most of the necessary drivers on its own, although there sti
 
 Before doing anything, I recommend replacing Windows' built in RTL8168/8111 driver, as it seems to cause weird networking issues (or at least it caused them for me on my particular board) with networking dropping out every now and again. The driver is present in this repo - file name sp137126.exe - the installer has HP branding, but it works fine on this board (it was the best .exe I could find, didn't want to drop the raw .inf/sys files).
 
-The remaining devices don't seem to do much, although installing drivers would still likely be the perfect option (and it's what I do). Installing them is as easy as launching SDIO and letting it do the job; it can be downloaded using a torrent client (I recommend qBitTorrent) from [here](https://www.glenn.delahoy.com/downloads/sdio/SDIO_1.12.20.761.zip).
+The remaining devices don't seem to do much, although installing drivers would still likely be the perfect option (and it's what I do). Installing them is as easy as launching SDIO and letting it do the job; it can be downloaded using a torrent client (I recommend qBitTorrent) from [here](https://www.glenn.delahoy.com/downloads/sdio/SDIO_Update.torrent).
 
 ## Miscellaneous 
 
